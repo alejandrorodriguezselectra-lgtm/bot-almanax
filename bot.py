@@ -1,3 +1,4 @@
+import os
 import requests
 import discord
 from discord.ext import commands
@@ -5,7 +6,7 @@ from datetime import datetime
 import asyncio
 from zoneinfo import ZoneInfo
 
-TOKEN_BOT = "MTQ5NTg0MTM4NDcyNzQ0OTc5MQ.GO-lbe.UfylcQ-V0UoHPVQDti5NcX74uzFpTP404I6OHs"
+TOKEN_BOT = os.getenv("TOKEN_BOT")
 
 # Ahora sí en español
 lang = "es"
